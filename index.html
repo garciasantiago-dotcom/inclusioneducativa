@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tipos de Aprendizaje y Tipos de Autismo — Proyecto</title>
+
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#0f1720; --muted:#9aa6b2; --accent:#6ee7b7; --glass: rgba(255,255,255,0.03);
+    }
+    html,body{
+      height:100%;margin:0;
+      font-family:Inter, system-ui;
+      color:#e6eef6;
+      background:linear-gradient(180deg,#071021 0%, #071a21 100%);
+    }
+    .container{max-width:1100px;margin:28px auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:56px;height:56px;border-radius:12px;
+      background:linear-gradient(135deg,#4cc9f0,#6ee7b7);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:#042029
+    }
+    h1{margin:0;font-size:22px}
+    .lead{color:var(--muted)}
+
+    /* NAV */
+    nav a{
+      text-decoration:none;
+      color:var(--accent);
+      font-size:13px;
+    }
+
+    main{
+      display:grid;
+      grid-template-columns:1fr 360px;
+      gap:22px;margin-top:22px
+    }
+
+    .card{
+      background:rgba(255,255,255,0.03);
+      border-radius:12px;
+      padding:18px;
+      box-shadow:0 6px 18px rgba(2,6,10,0.6);
+      border:1px solid rgba(255,255,255,0.05)
+    }
+
+    img.responsive{width:100%;border-radius:10px}
+
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{padding:10px;text-align:left;border-bottom:1px dashed rgba(255,255,255,0.10)}
+    th{color:var(--accent);font-weight:600}
+
+    .small{font-size:13px;color:var(--muted)}
+
+    iframe{
+      width:100%;
+      height:100%;
+      border:0;
+      border-radius:10px;
+    }
+
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media(max-width:980px){
+      main{grid-template-columns:1fr;}
+    }
+
+    /* LIGHT MODE */
+    body.light{
+      background:linear-gradient(180deg,#f6fbff,#eef7ff);
+      color:#06202a;
+    }
+    body.light .card{background:white;border-color:rgba(0,0,0,0.1)}
+    body.light th{color:#2563eb}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <h1>Tipos de Aprendizaje y Tipos de Autismo</h1>
+          <p class="lead">Página informativa sobre los tipos de Aprendizaje y Autismo</p>
+        </div>
+      </div>
+
+      <button id="modeBtn" class="toggle">Modo claro / oscuro</button>
+    </header>
+
+    <!-- NAV -->
+    <nav class="card" style="margin-top:12px; padding:12px; display:flex; gap:16px; flex-wrap:wrap; justify-content:center;">
+      <a href="#intro">Introducción</a>
+      <a href="#aprendizaje">Tipos de aprendizaje</a>
+      <a href="#autismo">Tipos de autismo</a>
+      <a href="#extra">Más información</a>
+      <a href="#formulario">Formulario</a>
+    </nav>
+
+    <!-- MAIN GRID -->
+    <main>
+
+      <!-- LEFT COLUMN -->
+      <section>
+
+        <!-- INTRO -->
+        <article id="intro" class="card">
+          <h2>Introducción</h2>
+          <p class="small">
+            Este recurso resume los <strong>tipos de aprendizaje</strong> más referidos en educación y una visión actual sobre los
+            <strong>tipos de autismo</strong> (autism spectrum). Incluye tablas de referencia, imágenes y videos para apoyar tu presentación.
+          </p>
+
+          <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <figure>
+              <img class="responsive" alt="Autism awareness"
+                src="https://img.freepik.com/vector-premium/dia-mundial-autismo-conciencia-autismo-rompecabezas-o-mosaico-forma-corazon-diseno-plano-ilustracion-vectorial-aislado-sobre-fondo-blanco-concepto-concepto-apoyo-medico_153097-1272.jpg">
+              <figcaption class="small">Representación sobre el autismo.</figcaption>
+            </figure>
+
+            <figure>
+              <img class="responsive" alt="Classroom learning"
+                src="https://scalalearning.com/wp-content/uploads/2023/08/GSS_CREATIVIDAD_SCALA_ARTE_ARTICULO_61_Estilos-de-aprendizaje-y-sus-metodos-04-1024x876.png">
+              <figcaption class="small">Ambientes de aprendizaje variados.</figcaption>
+            </figure>
+          </div>
+
+          <h3 style="margin-top:18px">Videos recomendados</h3>
+          <p class="small">
+            Se han incrustado explicaciones breves y charlas que ayudan a comprender el autismo desde distintas perspectivas.
+          </p>
+
+          <div style="display:grid;gap:12px;margin-top:8px">
+
+            <!-- Video 1 (contenido idéntico) -->
+            <div style="aspect-ratio:16/9;">
+              <iframe
+                src="https://www.youtube.com/embed/y4vurv9usYA"
+                title="What it's really like to have autism | Ethan Lisi"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <!-- Video 2 -->
+            <div style="aspect-ratio:16/9;">
+              <iframe
+                src="https://www.youtube.com/embed/KaCDRxfcUCE"
+                title="Inside Our Autistic Minds | BBC Select"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- TIPOS DE APRENDIZAJE -->
+        <article id="aprendizaje" class="card" style="margin-top:16px">
+          <h2>Tipos de aprendizaje</h2>
+
+          <p class="small">
+            En educación se habla frecuentemente de estilos o tipos de aprendizaje:
+            <em>visual, auditivo, lectura/escritura y kinestésico</em> (modelo VARK).
+            Ten en cuenta que la evidencia científica actual recomienda centrar la enseñanza en estrategias basadas en evidencia más que en adaptar exclusivamente al supuesto "estilo" de cada alumno.
+          </p>
+
+          <table aria-label="Tabla de tipos de aprendizaje">
+            <thead>
+              <tr><th>Tipo</th><th>Descripción breve</th><th>% (estudios de encuestas)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Kinestésico</td><td>Aprender mediante la actividad y la manipulación.</td><td>~36–37%</td></tr>
+              <tr><td>Auditivo</td><td>Aprender escuchando explicaciones y discusiones.</td><td>~30–54% (varía por estudio)</td></tr>
+              <tr><td>Visual</td><td>Aprender mediante imágenes, diagramas y gráficos.</td><td>~30–35%</td></tr>
+              <tr><td>Lectura/Escritura</td><td>Preferencia por texto y notas.</td><td>~18–20%</td></tr>
+            </tbody>
+          </table>
+
+          <p class="small" style="margin-top:8px">
+            Nota: los porcentajes son referencias basadas en encuestas y estudios sobre preferencia...
+          </p>
+        </article>
+
+        <!-- TIPOS DE AUTISMO -->
+        <article id="autismo" class="card" style="margin-top:16px">
+          <h2>Tipos de autismo (visión actual)</h2>
+
+          <p class="small">
+            En la clasificación moderna (DSM-5) se habla de <strong>Trastorno del Espectro Autista (TEA)</strong> como un espectro...
+          </p>
+
+          <ul class="small">
+            <li><strong>TEA con/ sin discapacidad intelectual</strong></li>
+            <li><strong>TEA con/ sin alteración del lenguaje</strong></li>
+            <li><strong>Perfiles sensoriales</strong></li>
+            <li><strong>Enmascaramiento</strong></li>
+          </ul>
+
+          <p class="small">A continuación se muestran datos de prevalencia...</p>
+
+          <table aria-label="Prevalencia de autismo">
+            <thead>
+              <tr><th>Fuente / Región</th><th>Estimación</th><th>Interpretación</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>CDC (EE. UU., 2022 datos)</td><td>~1 en 31 niños (≈3.2%)</td><td>Datos de la red ADDM...</td></tr>
+              <tr><td>WHO (Global, 2021)</td><td>~1 en 127 personas (≈0.8%)</td><td>Estimación global...</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+      </section>
+
+      <!-- ASIDE -->
+      <aside>
+
+        <div class="card">
+          <h3>Recursos rápidos</h3>
+          <ul class="small">
+            <li>CDC — estadísticas y guías.</li>
+            <li>WHO — panorama global y definiciones.</li>
+            <li>TED / BBC — testimonios y charlas.</li>
+          </ul>
+
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.1);margin:12px 0">
+
+          <h4>Sugerencias para la exposición</h4>
+          <ol class="small">
+            <li>Incluye definiciones claras y evita estigmas.</li>
+            <li>Usa las tablas como apoyo visual.</li>
+            <li>Propón estrategias didácticas para distintos perfiles.</li>
+          </ol>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4>Imagen destacada</h4>
+          <img class="responsive"
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Autism_Awareness_Ribbon.png"
+            alt="Autism ribbon">
+          <p class="small">Simbolización del autismo.</p>
+        </div>
+
+      </aside>
+    </main>
+
+    <!-- SECCIÓN EXTRA -->
+    <section id="extra" class="card" style="margin-top:20px;">
+      <h2>Más información</h2>
+
+      <p class="small">Esta sección amplía el panorama sobre los procesos de aprendizaje...</p>
+      <p class="small">Además, estudios en psicología educativa señalan que estrategias como...</p>
+      <p class="small">También es importante considerar la <strong>motivación intrínseca</strong>...</p>
+      <p class="small">Finalmente, educadores y especialistas recomiendan promover un ambiente...</p>
+
+      <img class="responsive"
+        src="https://www.redcenit.com/redcenit/wp-content/uploads/2022/10/Neuroeducacion1.jpg"
+        alt="Neurociencia y aprendizaje">
+    </section>
+
+    <!-- -------------------------------------------------------------------------------- -->
+    <!-- FORMULARIO COMPLETO (SIN CAMBIAR NI UNA SOLA PALABRA, EXACTO COMO LO TENÍAS)    -->
+    <!-- -------------------------------------------------------------------------------- -->
+
+<style>
+  .form-pro {
+    margin-top: 28px;
+    background: rgba(255,255,255,0.06);
+    padding: 28px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  }
+
+  .form-pro h2 { margin-top: 0; }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 14px;
+  }
+
+  @media (max-width: 700px) {
+    .form-grid { grid-template-columns: 1fr; }
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .input-group label {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    padding: 12px 12px 12px 36px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.2s;
+  }
+
+  .input-group input:focus,
+  .input-group select:focus,
+  .input-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(255,255,255,0.12);
+  }
+
+  .input-group i {
+    position: absolute;
+    left: 10px;
+    bottom: 12px;
+    font-size: 16px;
+    opacity: 0.7;
+  }
+
+  .form-pro button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background: var(--accent);
+    font-weight: 700;
+    color: #042029;
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .form-pro button:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
+  }
+</style>
+
+<section id="formulario" class="form-pro">
+  <h2>Formulario ampliado (10+ campos)</h2>
+  <p class="small">Completa la información para una evaluación más detallada.</p>
+
+  <form>
+    <div class="form-grid">
+
+      <div class="input-group">
+        <label>Correo electrónico</label>
+        <i>📧</i>
+        <input type="email" required>
+      </div>
+
+      <div class="input-group">
+        <label>Teléfono</label>
+        <i>📱</i>
+        <input type="tel">
+      </div>
+
+      <div class="input-group">
+        <label>Ciudad o localidad</label>
+        <i>📍</i>
+        <input type="text">
+      </div>
+
+      <div class="input-group">
+        <label>Grado escolar</label>
+        <i>🎓</i>
+        <select>
+          <option>Primaria</option>
+          <option>Secundaria</option>
+          <option>Preparatoria</option>
+          <option>Universidad</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Preferencia de estudio</label>
+        <i>📚</i>
+        <select>
+          <option>Individual</option>
+          <option>En grupo</option>
+          <option>Ambos</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label>Horas de estudio por día</label>
+        <i>⏳</i>
+        <input type="number">
+      </div>
+
+      <div class="input-group">
+        <label>Materias que se facilitan</label>
+        <i>⭐</i>
+        <input type="text">
+      </div>
+
+      <div class="input-group">
+        <label>Materias que se dificultan</label>
+        <i>⚠️</i>
+        <input type="text">
+      </div>
+
+      <div class="input-group" style="grid-column: span 2;">
+        <label>Describe tus intereses principales</label>
+        <i>📝</i>
+        <textarea rows="4"></textarea>
+      </div>
+
+      <div class="input-group" style="grid-column: span 2;">
+        <label>¿Tienes alguna condición de neurodivergencia diagnosticada?</label>
+        <i>🧠</i>
+        <select>
+          <option>No</option>
+          <option>Autismo</option>
+          <option>TDAH</option>
+          <option>Otra</option>
+        </select>
+      </div>
+
+    </div>
+
+    <button type="submit">Enviar formulario ampliado</button>
+  </form>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+      Hecho por GARCIA RIVERA SANTIAGO Y MAR OBREGON SERGIO LEONARDO.
+    </footer>
+
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    document.getElementById('modeBtn')
+      .addEventListener('click', ()=>document.body.classList.toggle('light'));
+  </script>
+
+</body>
+</html>
